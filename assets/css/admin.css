@@ -1,0 +1,348 @@
+.mpro-console-admin {
+  max-width: 1680px;
+}
+
+.mpro-console-admin * {
+  box-sizing: border-box;
+}
+
+.mpro-console-admin__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 18px 0 8px;
+}
+
+.mpro-console-admin__header h1.wp-heading-inline {
+  display: block;
+  margin: 0 0 6px;
+  padding: 0;
+}
+
+.mpro-console-admin__header p.description {
+  margin: 0 0 6px;
+}
+
+.mpro-console-admin__header > code {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 5px 9px;
+  white-space: nowrap;
+}
+
+.mpro-console-plugin-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #646970;
+  font-size: 12px;
+}
+
+.mpro-console-plugin-meta a {
+  text-decoration: none;
+}
+
+.mpro-console-admin__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(460px, 1fr);
+  gap: 20px;
+  align-items: start;
+  margin-top: 18px;
+}
+
+.mpro-console-admin__controls {
+  min-width: 0;
+}
+
+.mpro-console-card {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.mpro-console-card__heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px;
+  border-bottom: 1px solid #c3c4c7;
+}
+
+.mpro-console-card__heading h2 {
+  margin: 0 0 3px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.mpro-console-card__heading p {
+  margin: 0;
+  color: #646970;
+  font-size: 12px;
+}
+
+.mpro-console-card__count {
+  flex: 0 0 auto;
+  color: #646970;
+  font-size: 12px;
+}
+
+.mpro-console-card > textarea,
+.mpro-console-card > .mpro-console-fields,
+.mpro-console-card > .mpro-console-toggles,
+.mpro-console-card > .mpro-console-copy {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+#mpro-console-logs {
+  display: block;
+  width: calc(100% - 24px);
+  min-height: 240px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  resize: vertical;
+}
+
+.mpro-console-fields {
+  display: grid;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.mpro-console-fields--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mpro-console-field {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.mpro-console-field > span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.mpro-console-field input[type="text"],
+.mpro-console-field input[type="number"],
+.mpro-console-field select {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.mpro-console-field small.description {
+  margin-top: -2px;
+  font-size: 11px;
+}
+
+.mpro-console-input-suffix {
+  position: relative;
+}
+
+.mpro-console-input-suffix em {
+  position: absolute;
+  inset-inline-end: 9px;
+  top: 50%;
+  color: #646970;
+  font-size: 11px;
+  font-style: normal;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.mpro-console-input-suffix input {
+  padding-inline-end: 40px;
+}
+
+.mpro-console-toggles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 16px;
+  padding: 0 0 14px;
+}
+
+.mpro-console-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.mpro-console-toggle input[type="checkbox"] {
+  margin: 0;
+}
+
+.mpro-console-toggle span {
+  font-size: 12px;
+}
+
+.mpro-console-shortcode-help {
+  padding-bottom: 12px;
+}
+
+.mpro-console-copy {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: calc(100% - 24px);
+  min-height: 36px;
+  margin-top: 8px !important;
+  text-align: left;
+}
+
+.mpro-console-copy code {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mpro-console-copy span {
+  flex: 0 0 auto;
+}
+
+.mpro-console-admin__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 0 24px;
+}
+
+.mpro-console-admin__action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mpro-console-admin__preview-column {
+  position: sticky;
+  top: 48px;
+  min-width: 0;
+}
+
+.mpro-console-preview-card {
+  overflow: hidden;
+  min-height: calc(100vh - 96px);
+  border: 1px solid #c3c4c7;
+  background: #111216;
+}
+
+.mpro-console-preview-card__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  padding: 0 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.mpro-console-preview-card__topbar > div {
+  display: flex;
+  gap: 6px;
+}
+
+.mpro-console-preview-card__topbar span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .24);
+}
+
+.mpro-console-preview-card__topbar small {
+  color: rgba(255, 255, 255, .58);
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.mpro-console-preview-card__canvas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 139px);
+  padding: clamp(26px, 4vw, 56px);
+  overflow: hidden;
+  color: #f5f6f7;
+  background: #111216;
+}
+
+.mpro-console-preview-card__canvas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.mpro-console-preview-card__hero-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+}
+
+.mpro-console-preview-card__hero-copy span {
+  display: block;
+  margin-bottom: 14px;
+  color: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  opacity: .6;
+}
+
+.mpro-console-preview-card__hero-copy strong {
+  color: inherit;
+  font-size: clamp(28px, 4vw, 54px);
+  font-weight: 500;
+  line-height: 1.03;
+  letter-spacing: -.055em;
+}
+
+.mpro-console-log--preview {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  margin-top: 80px;
+}
+
+@media (max-width: 1180px) {
+  .mpro-console-admin__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mpro-console-admin__preview-column {
+    position: static;
+    order: -1;
+  }
+
+  .mpro-console-preview-card,
+  .mpro-console-preview-card__canvas {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 782px) {
+  .mpro-console-admin__header,
+  .mpro-console-admin__actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .mpro-console-fields--two,
+  .mpro-console-toggles {
+    grid-template-columns: 1fr;
+  }
+
+  .mpro-console-preview-card,
+  .mpro-console-preview-card__canvas {
+    min-height: 520px;
+  }
+}

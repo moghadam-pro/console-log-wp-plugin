@@ -1,0 +1,74 @@
+.mpro-console-log {
+  --mpro-console-width: 100%;
+  --mpro-console-height: 220px;
+  --mpro-console-font-size: 11px;
+  --mpro-console-line-height: 1.45;
+  --mpro-console-color: currentColor;
+  --mpro-console-opacity: .55;
+
+  position: relative;
+  width: var(--mpro-console-width);
+  max-width: 100%;
+  height: var(--mpro-console-height);
+  overflow: hidden;
+  color: var(--mpro-console-color);
+  opacity: var(--mpro-console-opacity);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: var(--mpro-console-font-size);
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  line-height: var(--mpro-console-line-height);
+  letter-spacing: -.015em;
+  pointer-events: none;
+  isolation: isolate;
+}
+
+.mpro-console-log--masked {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, .16) 18%, #000 62%, #000 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, .16) 18%, #000 62%, #000 100%);
+}
+
+.mpro-console-log__track {
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: 0;
+  min-width: 100%;
+  will-change: contents;
+}
+
+.mpro-console-log__line {
+  display: flex;
+  align-items: baseline;
+  width: max-content;
+  min-width: 100%;
+  max-width: none;
+  gap: .58em;
+  white-space: nowrap;
+  transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+.mpro-console-log__timestamp {
+  opacity: .5;
+}
+
+.mpro-console-log__category {
+  opacity: .72;
+  font-weight: 600;
+}
+
+.mpro-console-log__message {
+  opacity: 1;
+}
+
+.mpro-console-log__lines,
+.mpro-console-log__settings {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mpro-console-log__line {
+    animation: none !important;
+    transition: none !important;
+  }
+}
